@@ -83,56 +83,74 @@
             android:id="@+id/departmentLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
             android:paddingTop="8dp"
             android:text="Department"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:layout_editor_absoluteX="108dp"
-            tools:layout_editor_absoluteY="764dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extension" />
 
         <TextView
             android:id="@+id/department"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-            tools:layout_editor_absoluteX="108dp"
-            tools:layout_editor_absoluteY="823dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.179"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/departmentLabel"
             tools:text="Department name" />
 
         <TextView
             android:id="@+id/supervisorLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:paddingTop="8dp"
             android:text="Supervisor"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:layout_editor_absoluteX="108dp"
-            tools:layout_editor_absoluteY="920dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/department" />
 
         <TextView
             android:id="@+id/supervisor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            tools:layout_editor_absoluteX="108dp"
-            tools:layout_editor_absoluteY="975dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/supervisorLabel"
             tools:text="Supervisor\'s Name" />
 
         <TextView
             android:id="@+id/directReportsLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
             android:paddingTop="8dp"
             android:text="Direct Reports"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:layout_editor_absoluteX="108dp"
-            tools:layout_editor_absoluteY="1083dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/supervisor" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/directReportsRecyclerView"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            tools:layout_editor_absoluteX="108dp"
-            tools:layout_editor_absoluteY="1152dp" />
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.163"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/directReportsLabel" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
